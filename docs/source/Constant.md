@@ -44,7 +44,7 @@ Let's continue using the last examples, we're going to initialize a tensor in an
 
 ##### NDArray
 
-The first thing we need to know is about `ndarray`'s memory model. The ndarray memory model is a very important data structure, and almost all underlying computation are inseparable from this datb a structure. One fundamental aspect of the ndarray is that an array is seen as a "chunk" of memory starting at some location. The interpretation of this memory depends on the stride information. A segment of memory is inherently 1-dimensional, and there are many different schemes for arranging the items of an N-dimensional array in a 1-dimensional block. `ndarray` objects can accommodate any strided indexing scheme. In a strided scheme, the N-dimensional index <img src="_static\constant\n-index-formula.svg"/> corresponds to the offset (in bytes) : <img src="_static\constant\n-index-formula-offset.svg" />.
+The first thing we need to know is about `ndarray`'s memory model. The ndarray memory model is a very important data structure, and almost all underlying computation are inseparable from this data structure. One fundamental aspect of the ndarray is that an array is seen as a "chunk" of memory starting at some location. The interpretation of this memory depends on the stride information. A segment of memory is inherently 1-dimensional, and there are many different schemes for arranging the items of an N-dimensional array in a 1-dimensional block. `ndarray` objects can accommodate any strided indexing scheme. In a strided scheme, the N-dimensional index <img src="_static\constant\n-index-formula.svg"/> corresponds to the offset (in bytes) : <img src="_static\constant\n-index-formula-offset.svg" />.
 
 <img src="_static\contiguous-block-of-memory.png"  />
 
